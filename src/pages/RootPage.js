@@ -19,8 +19,11 @@ class RootPage extends Component {
 
     render() {
         return (
-            <div style={{width: '100%', height: '100%'}}>
-                <div id="hello-message">{this.props.message}</div>
+            <div style={{width: '100%', height: '100%', display: 'flex', flexDirection: 'column'}}>
+                <div id="hello-message" style={{display:'flex', marginTop:'20px', marginBottom:'20px', width: '100%', justifyContent:'center', backgroundColor:'red'}}>
+                <span style={{fontSize:40}}>{this.props.message}</span>
+                
+                </div>
             </div>
         )
     }
