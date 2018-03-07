@@ -20,7 +20,7 @@ class RootPage extends Component {
     render() {
         return (
             <div style={{width: '100%', height: '100%'}}>
-                <div>{this.props.message}</div>
+                <div id="hello-message">{this.props.message}</div>
             </div>
         )
     }
