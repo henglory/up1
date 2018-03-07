@@ -5,7 +5,7 @@ import org.springframework.data.annotation.Id;
 public class Person {
 
     @Id
-    private int id;
+    private String id;
     private String firstName;
     private String lastName;
 
@@ -17,10 +17,10 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
     public String getLastName() {
