@@ -1,6 +1,6 @@
 
     
-var endpoint = "http://api-backend:8080"
+var endpoint = "http://api.hellobackend.com:8080"
 
 const ApiConstant = {
 
