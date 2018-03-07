@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { createStore, applyMiddleware } from 'redux'
+import { Provider } from 'react-redux'
+import RootReducer from './RootReducer'
+import RootPage from './pages/RootPage'
+import thunk from 'redux-thunk'
+
+const mainStore = createStore(
+  RootReducer,
+  applyMiddleware(
+    thunk
+  )
+)
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Provider store={mainStore}>
+        <RootPage />      
+      </Provider>
     );
   }
 }
