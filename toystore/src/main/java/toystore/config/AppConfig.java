@@ -10,7 +10,7 @@ public class AppConfig {
     @Bean
     public MongoClientFactoryBean mongo() {
         MongoClientFactoryBean mongo = new MongoClientFactoryBean();
-        mongo.setHost("localhost");
+        mongo.setHost("mongodb");
         mongo.setPort(27017);
         return mongo;
     }

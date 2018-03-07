@@ -29,7 +29,8 @@ public class PersonRepositoryTest {
     public void shouldSaveAndGetData() throws Exception {
         // Arrange
         Person somkiat = new Person("somkiat", "pui");
-        personRepository.save(somkiat);
+        somkiat = personRepository.save(somkiat);
+        System.out.println("Generated ID: " + somkiat.getId());
 
         // Action
         Optional<Person> shouldSomkiat = personRepository.findByFirstName("somkiat");
