@@ -1,6 +1,6 @@
 package toystore.vo;
 
-public class BaseResponse {
+public class BaseRs {
 
     private String status;
 
