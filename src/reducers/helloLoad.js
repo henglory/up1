@@ -10,7 +10,7 @@ const hello = (state = INIT_STATE, action) => {
         case 'load_complete' :
             return {
                 ...state,
-                message: action.payload.message
+                message: action.payload
             }
         default : return state;
     }

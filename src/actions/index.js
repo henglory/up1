@@ -16,9 +16,14 @@ export function sayHi(){
             console.log('get '+response.data.message)
             dispatch({
                 type: "load_complete",
-                payload: response.data
+                payload: response.data.message
             })
 
+        }).catch( reason => {
+            dispatch({
+                type: "load_complete",
+                payload: "Sorry, cannot connect backend"
+            })
         })
 
     }
