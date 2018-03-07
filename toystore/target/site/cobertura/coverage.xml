@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="0.75" branch-rate="0.5" lines-covered="27" lines-valid="36" branches-covered="1" branches-valid="2" complexity="1.0714285714285714" version="2.1.1" timestamp="1520392669787">
+	<sources>
+		<source>--source</source>
+		<source>/Users/deadpool/IdeaProjects/toystore/src/main/java</source>
+	</sources>
+	<packages>
+		<package name="toystore" line-rate="0.3333333333333333" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="toystore.ToyStoreApplication" filename="toystore/ToyStoreApplication.java" line-rate="0.3333333333333333" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="8" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="main" signature="([Ljava/lang/String;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="11" hits="0" branch="false"/>
+								<line number="12" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="8" hits="3" branch="false"/>
+						<line number="11" hits="0" branch="false"/>
+						<line number="12" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="toystore.controller" line-rate="0.9230769230769231" branch-rate="0.5" complexity="2.0">
+			<classes>
+				<class name="toystore.controller.HelloController" filename="toystore/controller/HelloController.java" line-rate="0.8" branch-rate="0.5" complexity="2.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="10" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="sayHi" signature="(Ljava/lang/String;)Ltoystore/domain/Hello;" line-rate="0.75" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="15" hits="1" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="16" hits="0" branch="false"/>
+								<line number="18" hits="1" branch="false"/>
+								<line number="19" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="10" hits="1" branch="false"/>
+						<line number="15" hits="1" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="16" hits="0" branch="false"/>
+						<line number="18" hits="1" branch="false"/>
+						<line number="19" hits="1" branch="false"/>
+					</lines>
+				</class>
+				<class name="toystore.controller.HelloControllerWithRepository" filename="toystore/controller/HelloControllerWithRepository.java" line-rate="1.0" branch-rate="1.0" complexity="0.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="(Ltoystore/repository/PersonRepository;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="19" hits="2" branch="false"/>
+								<line number="20" hits="2" branch="false"/>
+								<line number="21" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="lambda$sayHi$0" signature="(Ltoystore/repository/Person;)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="27" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="sayHi" signature="(Ljava/lang/String;)Ltoystore/domain/Hello;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="25" hits="2" branch="false"/>
+								<line number="26" hits="2" branch="false"/>
+								<line number="28" hits="2" branch="false"/>
+								<line number="30" hits="2" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="19" hits="2" branch="false"/>
+						<line number="20" hits="2" branch="false"/>
+						<line number="21" hits="2" branch="false"/>
+						<line number="25" hits="2" branch="false"/>
+						<line number="26" hits="2" branch="false"/>
+						<line number="27" hits="4" branch="false"/>
+						<line number="28" hits="2" branch="false"/>
+						<line number="30" hits="2" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="toystore.domain" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="toystore.domain.Hello" filename="toystore/domain/Hello.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="7" hits="4" branch="false"/>
+								<line number="8" hits="4" branch="false"/>
+								<line number="9" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="getMessage" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="12" hits="4" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="7" hits="4" branch="false"/>
+						<line number="8" hits="4" branch="false"/>
+						<line number="9" hits="4" branch="false"/>
+						<line number="12" hits="4" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="toystore.repository" line-rate="0.625" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="toystore.repository.Person" filename="toystore/repository/Person.java" line-rate="0.625" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="17" hits="1" branch="false"/>
+								<line number="18" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="20" hits="3" branch="false"/>
+								<line number="21" hits="3" branch="false"/>
+								<line number="22" hits="3" branch="false"/>
+								<line number="23" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="getFirstName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="38" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="getId" signature="()I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="26" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getLastName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="32" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="setFirstName" signature="(Ljava/lang/String;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="41" hits="0" branch="false"/>
+								<line number="42" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setId" signature="(I)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="29" hits="0" branch="false"/>
+								<line number="30" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setLastName" signature="(Ljava/lang/String;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="35" hits="0" branch="false"/>
+								<line number="36" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="toString" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="46" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="17" hits="1" branch="false"/>
+						<line number="18" hits="1" branch="false"/>
+						<line number="20" hits="3" branch="false"/>
+						<line number="21" hits="3" branch="false"/>
+						<line number="22" hits="3" branch="false"/>
+						<line number="23" hits="3" branch="false"/>
+						<line number="26" hits="1" branch="false"/>
+						<line number="29" hits="0" branch="false"/>
+						<line number="30" hits="0" branch="false"/>
+						<line number="32" hits="1" branch="false"/>
+						<line number="35" hits="0" branch="false"/>
+						<line number="36" hits="0" branch="false"/>
+						<line number="38" hits="3" branch="false"/>
+						<line number="41" hits="0" branch="false"/>
+						<line number="42" hits="0" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
+					</lines>
+				</class>
+				<class name="toystore.repository.PersonRepository" filename="toystore/repository/PersonRepository.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+					</methods>
+					<lines>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
