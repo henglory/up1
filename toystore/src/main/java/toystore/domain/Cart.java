@@ -3,17 +3,18 @@ package toystore.domain;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.math.BigDecimal;
+import java.util.List;
+
 @Document
 public class Cart {
 
     @Id
     private String cartId;
-    private String fullName;
-    private String address1;
-    private String address2;
-    private String city;
-    private String province;
-    private String postCode;
+    private List<CartItem> items;
+    private ShippingInfo shippingInfo;
+    private BigDecimal subTotal;
+    private BigDecimal shippingFee;
 
     public String getCartId() {
         return cartId;
@@ -23,51 +24,35 @@ public class Cart {
         this.cartId = cartId;
     }
 
-    public String getFullName() {
-        return fullName;
+    public List<CartItem> getItems() {
+        return items;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setItems(List<CartItem> items) {
+        this.items = items;
     }
 
-    public String getAddress1() {
-        return address1;
+    public ShippingInfo getShippingInfo() {
+        return shippingInfo;
     }
 
-    public void setAddress1(String address1) {
-        this.address1 = address1;
+    public void setShippingInfo(ShippingInfo shippingInfo) {
+        this.shippingInfo = shippingInfo;
     }
 
-    public String getAddress2() {
-        return address2;
+    public BigDecimal getSubTotal() {
+        return subTotal;
     }
 
-    public void setAddress2(String address2) {
-        this.address2 = address2;
+    public void setSubTotal(BigDecimal subTotal) {
+        this.subTotal = subTotal;
     }
 
-    public String getCity() {
-        return city;
+    public BigDecimal getShippingFee() {
+        return shippingFee;
     }
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getProvince() {
-        return province;
-    }
-
-    public void setProvince(String province) {
-        this.province = province;
-    }
-
-    public String getPostCode() {
-        return postCode;
-    }
-
-    public void setPostCode(String postCode) {
-        this.postCode = postCode;
+    public void setShippingFee(BigDecimal shippingFee) {
+        this.shippingFee = shippingFee;
     }
 }

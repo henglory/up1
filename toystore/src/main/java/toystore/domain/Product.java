@@ -23,6 +23,7 @@ public class Product {
     private String age;
     private BigDecimal price;
     private Availability availability;
+    private String brand;
 
     public int getId() {
         return id;
@@ -70,5 +71,13 @@ public class Product {
 
     public void setAvailability(Availability availability) {
         this.availability = availability;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 }
