@@ -1,27 +1,23 @@
-import React, {Component} from 'react';
-import { connect } from 'react-redux';
-import * as actions from '../actions'
+import React, {Component} from 'react'
+import { connect } from 'react-redux'
 
-const mapStateToProps = (state) => ({
-    message: state.hello.message
-})
 
 class RootPage extends Component {
 
     constructor(props){
-        super(props);
+        super(props)
         
     }
 
     componentWillMount(){
-        this.props.sayHi();
+        // this.props.sayHi()
     }
 
     render() {
         return (
             <div style={{width: '100%', height: '100%', display: 'flex', flexDirection: 'column'}}>
-                <div id="hello-message" style={{display:'flex', marginTop:'20px', marginBottom:'20px', width: '100%', justifyContent:'center', backgroundColor:'red'}}>
-                <span style={{fontSize:40}}>{this.props.message}</span>
+                <div style={{display:'flex', marginTop:'20px', marginBottom:'20px', width: '100%', justifyContent:'center', backgroundColor:'red'}}>
+                <span id="hello-message" style={{fontSize:40}}>{this.props.message}</span>
                 
                 </div>
             </div>
@@ -31,4 +27,4 @@ class RootPage extends Component {
 }
 
 
-export default connect(mapStateToProps, actions)(RootPage)
+export default RootPage

@@ -12,8 +12,6 @@ export function sayHi(){
     return function(dispatch){
 
         axios.get(ApiConstant.HELLO_ENDPOINT, withHeader()).then(response => {
-
-            console.log('get '+response.data.message)
             dispatch({
                 type: "load_complete",
                 payload: response.data.message
@@ -27,5 +25,14 @@ export function sayHi(){
         })
 
     }
+
+}
+
+export function sayHi2(callback){
+    axios.get(ApiConstant.HELLO_ENDPOINT, withHeader()).then(response => {
+        callback(response.data.message)
+    }).catch( reason => {
+        callback("Sorry, cannot connect backend")
+    })
 
 }

@@ -1,10 +1,10 @@
 
     
-var endpoint = "http://api.hellobackend.com:8080"
+var endpoint = "http://www.mocky.io"
 
 const ApiConstant = {
 
-    HELLO_ENDPOINT: endpoint + "/hello/data/somkiat"
+    HELLO_ENDPOINT: endpoint + "/v2/5a9f5fcd2e00002a0074d054"
 
 }
 

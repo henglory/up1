@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import RootReducer from './RootReducer'
 import RootPage from './pages/RootPage'
 import thunk from 'redux-thunk'
+import { sayHi2 } from './actions'
 
 const mainStore = createStore(
   RootReducer,
@@ -15,11 +14,30 @@ const mainStore = createStore(
 )
 
 class App extends Component {
+
+  state = {
+    message: ""
+  }
+
+  constructor(props){
+    super(props)
+    sayHi2(this.setResult)
+  }
+
+  componentWillMount(){
+  }
+
+  setResult = (msg) => {
+    this.setState({
+      message: msg
+    })
+  }
+
   render() {
     return (
-      <Provider store={mainStore}>
-        <RootPage />      
-      </Provider>
+      //<Provider id="provider" store={mainStore}>
+        <RootPage message={this.state.message}/>      
+      //</Provider>
     );
   }
 }
